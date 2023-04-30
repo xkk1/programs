@@ -1,0 +1,223 @@
+/* CSS 初始化 */
+/* 清除元素默认的内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 清除列表样式 */
+li {
+	list-style: none;
+}
+/* 声明清除浮动的样式 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /* IE6、IE7专门清除浮动样式 */
+}
+body {
+    min-width: 984px;
+    color: #868686;
+    font: 12px/1.7 Arial;
+}
+a {
+    color: #868686;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(191, 0, 0);
+}
+/* 版心 */
+.w {
+	width: 984px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    clear: both;
+}
+.logo {
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-image: url(img/logo.png);
+    width: 199px;
+    height: 42px;
+}
+.start-search {
+    margin-bottom: 1px;
+}
+.start-search .start {
+    margin-top: 5px;
+    text-align: right;
+}
+.start-search .search {
+    text-align: right;
+    margin-top: 15px;
+}
+.start-search .search button {
+    font-size: 12px;
+    margin-left: 4px;
+    padding: 1px 8px 1px 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #777;
+    background-image: linear-gradient(180deg, #9D9D9D, #626262);
+    border-bottom: 1px solid #A2A2A2;
+}
+/* 导航栏 */
+.navbar {
+    background: url(img/navABg.png) left center repeat-x;
+}
+.navbar>ul>li {
+    width: 162px;
+    float: left;
+    padding-left: 2px;
+    text-align: center;
+    background-color: #E5E6E6;
+    background: url(img/navLibg.png) left center no-repeat;
+}
+.navbar>ul>li:first-child {
+    padding-left: 0;
+    background: none;
+}
+.navbar>ul>li>a {
+    line-height: 41px;
+}
+/* banFlash */
+.banFlash {
+    width: 984px;
+    height: 337px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: url(img/b2.png);
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+}
+/* wrapper */
+.wrapper>div {
+    float: left;
+}
+.wrapper>div>.title {
+    height: 32px;
+    line-height: 30px;
+    background: url(img/mmBg.png) repeat-x;
+    padding: 0 5px 0 0;
+}
+.wrapper>div>.title>.content {
+    background: none;
+    height: 30px;
+    border-bottom: #248596 2px solid;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.wrapper>div>.title>.encontent {
+    background: none;
+    height: 30px;
+    float: left;
+    margin-left: -10px;
+    font-family: arial,helvetica,sans-serif;
+    /* font-size: 6px; */
+    transform: scale(0.7); /* 用缩放来解决字体不能设置更小的问题 */
+    font-weight: bold;
+    color: #989898;
+}
+.wrapper>div>.title>a.more {
+    float: right;
+    margin-top: 10px;
+    width: 34px;
+    height: 13px;
+    background-image: url(img/more.png);
+}
+.m1Container {
+    width: 246px;
+}
+/* m1Container */
+.m1Container>.picture {
+    margin: 5px auto;
+    width: 241px;
+    height: 84px;
+    background: url(img/newPictrue.png) no-repeat;
+}
+.wrapper>div>.txtList>ul>li>a {
+    background: url(img/2.gif) left center no-repeat;
+    padding-left: 15px;
+}
+.wrapper>div>.txtList>ul>li>span {
+    float: right;
+}
+.wrapper>div>.txtList>ul>li {
+    height: 27px;
+    line-height: 27px;
+    border-top: #dfdfdf 1px dashed;
+}
+.wrapper>div>.txtList>ul>li:first-child {
+    border-top: none;
+}
+/* m2Container */
+.m2Container {
+    width: 440px;
+    margin-left: 18px;
+}
+.imgList {
+    overflow: hidden;
+}
+.imgList>ul {
+    position: relative;
+    right: 0px;
+    width: 2860px;
+}
+.imgList>ul>li {
+    float: left;
+    width: 220px;
+}
+.imgList>ul>li>a:first-child {
+    display: table-cell;
+    width: 212px;
+    height: 175px;
+    border: 1px solid #DFDFDF;
+    background-image: url(img/ZT0801.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.imgList>ul>li>a:last-child {
+    display: block;
+    text-align: center;
+}
+/* m3Container */
+.m3Container {
+    width: 262px;
+    margin-left: 18px;
+}
+.m3Container>.picture {
+    margin: 25px auto 20px auto;
+    width: 261px;
+    height: 80px;
+    background: url(img/contactPicture.png) no-repeat;
+}
+.m3Container>.content>p {
+    margin: 10px 0;
+}
+/* footer */
+.footer {
+    text-align: center;
+    border-top: #dedede 3px solid;
+    background: #f7f7f7;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 36px;
+}

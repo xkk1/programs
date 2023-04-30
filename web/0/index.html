@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苏州百特电器有限公司</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header w clearfix">
+        <div class="logo"></div>
+        <div class="start-search">
+            <div class="start"><a href="#">中文</a> | <a href="#">ENGLISH</a></div>
+            <div class="search">关键词：<input type="text"><button>搜&emsp;索</button></div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="navbar w">
+        <ul class="clearfix">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">产品展示</a></li>
+            <li><a href="#">新闻资讯</a></li>
+            <li><a href="#">人才招聘</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <!-- banFlash -->
+    <div class="banFlash w" id="banFlash" onmouseover="onBanFlash=true" onmouseleave="onBanFlash=false"></div>
+    <!-- wrapper -->
+    <div class="wrapper w clearfix">
+        <div class="m1Container">
+            <div class="title clearfix">
+                <div class="content">新闻中心</div>
+                <div class="encontent">NEWS</div>
+                <a href="#" class="more"></a>
+            </div>
+            <div class="picture"></div>
+            <div class="txtList">
+                <ul>
+                    <li><a href="#" title="本公司正式上线欢迎您的访问">本公司正式上线欢迎您的访...</a><span>2016-09-18</span></li>
+                    <li><a href="#" title="本公司正式上线欢迎您的访问">本公司正式上线欢迎您的访...</a><span>2016-09-18</span></li>
+                    <li><a href="#" title="本公司正式上线欢迎您的访问">本公司正式上线欢迎您的访...</a><span>2016-09-18</span></li>
+                    <li><a href="#" title="本公司正式上线欢迎您的访问">本公司正式上线欢迎您的访...</a><span>2016-09-18</span></li>
+                    <li><a href="#" title="本公司正式上线欢迎您的访问">本公司正式上线欢迎您的访...</a><span>2016-09-18</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="m2Container">
+            <div class="title">
+                <div class="content">最新产品</div>
+                <div class="encontent">PRODUCT</div>
+                <a href="#" class="more"></a>
+            </div>
+            <div class="imgList" onmouseover="moving=false" onmouseleave="moving=true">
+                <ul class="clearfix" id="imgList_ul">
+                    <li><a href="#" style="background-image: url(img/ZW9016B.jpg);" title="ZW9016B"></a><a href="#">ZW9016B</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW9029.png);" title="ZW9029"></a><a href="#">ZW9029</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW9016A.png);" title="ZW9016A"></a><a href="#">ZW9016A</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW9003.png);" title="ZW9003"></a><a href="#">ZW9003</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW9005.png);" title="ZW9005"></a><a href="#">ZW9005</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW9009.png);" title="ZW9009"></a><a href="#">ZW9009</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW0603.jpg);" title="ZW0603"></a><a href="#">ZW0603</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW0410.png);" title="ZW0410"></a><a href="#">ZW0410</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW9005A%20with%20motorised%20brush.jpg);" title="ZW9005A with motorised brush"></a><a href="#">ZW9005A with motorised brush</a></li>
+                    <li><a href="#" style="background-image: url(img/ZT0801.jpg);" title="ZT0801"></a><a href="#">ZT0801</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW9016B.jpg);" title="ZW9016B"></a><a href="#">ZW9016B</a></li>
+                    <li><a href="#" style="background-image: url(img/ZW9029.png);" title="ZW9029"></a><a href="#">ZW9029</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="m3Container">
+            <div class="picture"></div>
+            <div class="content">
+                <p>咨询热线:</p>
+                <p>固定电话：0512-65787572</p>
+                <p>Email:eva@better-vac.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer w">版权所有&copy;2013 Suzhou Best Clean Electrical Co.,Ltd 苏ICP备88888888 技术支持：<a href="http://z2china.com/" target="_blank" rel="noopener noreferrer">中国万网</a></div>
+    <script>
+        var moving = true;
+        var imgList_ul = document.getElementById("imgList_ul");
+        var imgList_ul_right = 0;
+        function move_imgList_ul() {
+            if (moving) {
+                imgList_ul.style.right = ++imgList_ul_right + "px";
+                if (imgList_ul_right == 2200) {
+                    imgList_ul_right = 0;
+                }
+            }
+            setTimeout(move_imgList_ul, 35);
+        }
+        move_imgList_ul();
+
+        var banFlash_div = document.getElementById("banFlash");
+        var banFlash_picture_index = 1;
+        var banFlash_picture_list = ["b1.png", "b2.png", "b3.png", "b4.jpg", "b5.jpg"];
+        var onBanFlash = false;
+        function change_banFlash_picture() {
+            if (!onBanFlash) {
+                banFlash_div.style.backgroundImage = "url(img/" + banFlash_picture_list[banFlash_picture_index] + ")";
+                banFlash_picture_index++;
+                if (banFlash_picture_index >= banFlash_picture_list.length) {
+                    banFlash_picture_index = 0;
+                }
+            }
+            setTimeout(change_banFlash_picture, 2500);
+        }
+        change_banFlash_picture();
+    </script>
+    <div id="author_info" style="margin-top: 666px;padding: 66px 10px; color: #fff; text-align: center; background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957);">
+        <p style="font-size: 20px; font-weight: bold;">
+            五一假期作业企业门户网站布局设计<br />
+            图片素材下载：
+                <a href="https://xiaokuku.lanzout.com/i2hed0ubegwj" target="_blank" style="color: white;">蓝奏云</a> 
+                <a href="https://pan.baidu.com/s/1jsRneQ7a6jZZILr2fkojCQ?pwd=xkk1" target="_blank" style="color: white;">百度网盘-密码xkk1</a> 
+                <a href="https://pan.quark.cn/s/90e1cee55335" target="_blank" style="color: white;">夸克网盘</a>
+            <br/>
+            <a href="https://xkk1.github.io" target="_blank" style="color: white;">2023年4月30日15:49:43 由小喾苦制作</a><br />
+            <a href="https://xkk1.github.io" target="_blank" style="color: white;">个人网站</a>&emsp;
+            <a href="https://space.bilibili.com/513689605" target="_blank" style="color: white;">哔哩哔哩</a>&emsp;
+            <a href="https://github.com/xkk1" target="_blank" style="color: white;">GitHub</a>&emsp;
+            <a href="https://blog.csdn.net/qq_55207049" target="_blank" style="color: white;">CSDN</a><br />
+            <a href="https://www.google.cn/chrome/" target="_blank" style="color: white;">推荐使用 Google Chrome 浏览器以获得最佳体验</a>
+        </p>
+    </div>
+</body>
+</html>
