@@ -6019,6 +6019,7 @@ query_id = () => {
         ans_div.innerHTML = "<hr /><br />";
         ans_div.innerHTML += "<h3>上次查询结果：</h3>";
         ans_div.innerHTML += "身份证号码：" + id_str + "<br />";
+        ans_div.innerHTML += "年龄：" + (new Date().getFullYear() - parseInt(arrSplit[2])) + "<br />";
         ans_div.innerHTML += "性别：" + (parseInt(id_str[16]) % 2 === 0 ? "女" : "男") + "<br />";
         ans_div.innerHTML += `生日：${parseInt(arrSplit[2])}年${parseInt(arrSplit[3])}月${parseInt(arrSplit[4])}日<br />`;
         ans_div.innerHTML += "籍贯：" + id_card_area.getAreaByIdCard(id_str) + "<br />";
