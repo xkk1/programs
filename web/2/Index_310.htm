@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- notiflix -->
+    <link href="Resource_310/css/notiflix-3.2.6.min_310.css" rel="stylesheet">
+    <script src="Resource_310/js/notiflix-3.2.6.min_310.js"></script>
+    <!-- bootstrap -->
+    <link href="Resource_310/css/bootstrap.min_310.css" rel="stylesheet">
+    <script src="Resource_310/js/bootstrap.bundle.min_310.js"></script>
+    <!-- color-modes -->
+    <link href="Resource_310/css/color-modes_310.css" rel="stylesheet">
+    <script src="Resource_310/js/color-modes_310.js"></script>
+    <!-- animate.css -->
+    <link href="Resource_310/css/animate.min_310.css" rel="stylesheet" >
+    <!-- scrollReveal.js -->
+    <script src="Resource_310/js/scrollreveal_310.js"></script>
+    <!-- jQuery -->
+    <script src="Resource_310/js/jquery-3.7.0.min_310.js"></script>
+    <!-- Zepto 轻量、提供与 jQuery 兼容的 API -->
+    <!-- <script src="Resource_310/js/zepto.min.js"></script> -->
+    <link rel="stylesheet" href="css/Index_310.css">
+    <script src="js/click-text_310.js"></script>
+    <title>极限突破公司</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="2">
+    <script>
+        Notiflix.Loading.dots("网页正在努力加载中...", {clickToClose: true});
+        window.onload = function() {
+        Notiflix.Loading.remove();
+        ScrollReveal().reveal('.sr', {
+            delay: 300,
+            duration: 500,
+            reset: true
+        });
+    };
+    </script>
+    <!-- color modes -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+    </symbol>
+    </svg>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle animate__animated animate__backInRight">
+    <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center"
+            id="bd-theme"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="dropdown"
+            aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">主题切换</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            浅色
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+        </li>
+        <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            深色
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+        </li>
+        <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            自动
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+        </li>
+    </ul>
+    </div>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top animate__animated animate__fadeInDownBig">
+        <div class="container-fluid">
+            <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                aria-controls="offcanvasExample">极限突破</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">企业热点新闻</a> <!-- active -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hot">热销产品</a>
+                    </li>
+                    <li class="nav-item">
+                        
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#organization" >组织机构</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#marketing_department">超级推销团 <span class="text-muted">营销部门</span></a>
+                          <a class="dropdown-item" href="#product_department">创新工坊 <span class="text-muted">产品部门</span></a>
+                          <a class="dropdown-item" href="#customer_service_department">客户守护者 <span class="text-muted">客户服务部门</span></a>
+                        </div>
+                    </li>
+                    <!-- 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#organization">组织机构</a>
+                    </li>
+                     -->
+                </ul>
+                <form class="d-flex" method="get" action="https://www.baidu.com/s" target="_blank">
+                    <input class="form-control me-2" type="text" name="word" placeholder="请输入您要搜索的内容">
+                    <button class="btn btn-primary text-nowrap" type="submit">搜索</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 侧边栏 -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">极限突破公司</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>挑战自我，超越极限!</p>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body d-flex flex-column flex-shrink-0 p-3">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn d-block" data-bs-toggle="collapse" href="#collapseOne">
+                            联系我们
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                        <ul class="card-body list-group px-0 py-0">
+                            <li class="list-group-item"><a class="dropdown-item" href="https://xkk1.github.io/" target="_blank">个人网站</a></li>
+                            <li class="list-group-item"><a class="dropdown-item" href="https://space.bilibili.com/513689605" target="_blank">哔哩哔哩</a></li>
+                            <li class="list-group-item"><a class="dropdown-item" href="https://github.com/xkk1" target="_blank">GitHub</a></li>
+                            <li class="list-group-item"><a class="dropdown-item" href="https://gitee.com/xkk1" target="_blank">Gitee</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5 mb-auto">
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#myModal" data-bs-toggle="modal" data-bs-target="#myModal">
+                            关于我们
+                        </a>
+                    </div>
+                    <!-- <div class="col">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login_warning">
+                            打开模态框2
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+            <hr>
+            <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle text-body" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/head.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>账户</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+                <li><a class="dropdown-item disabled" href="#myModal">新建项目</a></li>
+                <li><a class="dropdown-item disabled" href="#">设置</a></li>
+                <li><a class="dropdown-item disabled" href="#">账号</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="sign-in_310.htm">登录</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 轮播 -->
+    <div class="container-fluid px-0 animate__animated animate__backInDown animate__delay-1s" id="news">
+        <div id="demo" class="carousel slide container-lg px-0" data-bs-ride="carousel">
+            <!-- 指示符 -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#login_warning">
+                    <img src="img/img_fjords_wide.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>极限突破公司推出全新产品线，拓展业务领域</h3>
+                        <p class="d-none d-md-block">
+                            极限公司近日宣布推出全新的产品线，以拓展其业务领域。该产品线包括一系列创新性的产品，旨在满足客户的需求，并为客户提供更多的价值。公司希望通过这次拓展，进一步提高其在市场上的竞争力，并为客户提供更多的选择。
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#login_warning">
+                    <img src="img/img_nature_wide.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>极限突破公司举办大型招聘会，吸引优秀人才</h3>
+                        <p class="d-none d-md-block">
+                            极限公司近日举办了一场大型招聘会，旨在吸引优秀的人才加入公司的团队。在这次招聘会上，公司提供了大量的职位空缺，并吸引了来自各行各业的求职者。公司希望通过这次招聘活动，招募更多的优秀人才，为公司的长期发展打下坚实的基础。
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#login_warning">
+                    <img src="img/img_mountains_wide.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>极限突破公司荣获行业奖项，彰显企业实力</h3>
+                        <p class="d-none d-md-block">
+                            极限公司最近在行业颁奖典礼上荣获了多项奖项，这充分彰显了公司的实力和影响力。公司在此次颁奖典礼上获得的奖项包括“最佳产品创新奖”、“最佳客户服务奖”和“最佳企业文化奖”。这些奖项不仅证明了公司在行业内的卓越表现，还为公司未来的发展提供了强大的动力和支持。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 左右切换按钮 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <!-- 热销产品 -->
+    <div class="container py-4" id="hot" onclick="location.href = 'hot_310.htm'">
+        <div class="row animate__animated animate__heartBeat animate__slower animate__infinite animate__delay-1s sr">
+            <div class="col  animate__animated animate__fadeInDown animate__slower animate__delay-1s">
+                <h1 class="text-center py-4 fw-bold">热销产品</h1>
+            </div>
+        </div>
+        <!-- Three columns of text below the carousel -->
+        <div class="row text-center hot-products">
+            <div class="col-md-4 animate__animated animate__fadeInLeft animate__delay-1s">
+                <img class="rounded-circle my-2" src="img/extreme_sport_equipment.webp" alt="Generic placeholder image"
+                    width="140" height="140">
+                <h2>高性能极限突破装备</h2>
+                <p>
+                    极限突破装备是极限突破公司的核心产品之一。随着消费者对高性能、高品质的极限突破装备的需求不断增加，极限公司推出更具有创新性和技术含量的极限突破装备，例如采用新型材料、具备更高保护性能的装备。
+                </p>
+                <p>
+                    <a class="btn btn-secondary" href="javascript:;" role="button">查看详细信息 »</a>
+                </p>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4 animate__animated animate__fadeInDown animate__delay-1s">
+                <img class="rounded-circle my-2" src="img/outdoor_equipment.webp" alt="Generic placeholder image" width="140"
+                    height="140">
+                <h2>轻便便携的户外装备</h2>
+                <p>
+                    对于喜欢户外运动的消费者来说，轻便、便携的户外装备是他们的首选。极限公司隆重推出更具有轻量化、便携性、多功能性的户外装备，例如可折叠便携式座椅、多功能户外背包等。
+                </p>
+                <p>
+                    <a class="btn btn-secondary" href="javascript:;" role="button">查看详细信息 »</a>
+                </p>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4 animate__animated animate__fadeInTopRight animate__delay-1s">
+                <img class="rounded-circle my-2" src="img/intelligent_sports_equipment.webp" alt="Generic placeholder image" width="140" height="140">
+                <h2>智能运动装备 <span class="badge bg-danger fs-6">New!</span></h2>
+                <p>
+                    随着科技的发展，越来越多的消费者开始追求智能化、科技化的运动装备。极限公司隆重推出更具有科技含量的智能运动装备，例如可连接智能手机的运动手表、智能运动鞋等。
+                </p>
+                <p>
+                    <a class="btn btn-secondary" href="javascript:;" role="button">查看详细信息 »</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- 组织机构 -->
+    <div class="container py-4" id="organization">
+        <div class="row animate__animated animate__bounce animate__infinite sr">
+            <div class="col">
+                <h1 class="text-center py-4">组织机构</h1>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    
+        <div class="row featurette sr" id="marketing_department" data-bs-toggle="modal" data-bs-target="#login_warning">
+            <div class="col-md-7 d-flex align-items-center">
+                <div>
+                    <h2 class="featurette-heading">超级推销团
+                        <span class="text-muted">营销部门</span>
+                    </h2>
+                    <p class="lead">
+                        负责公司的市场推广、品牌宣传、广告策划、销售促进等方面的工作，旨在提高公司的市场占有率和销售额。
+                        <span class="text-muted">该部门是公司销售推广的核心力量，肩负着将公司产品和服务推销给客户的重任。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="img/marketing_department.webp" alt="超级推销团 营销部门">
+            </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette sr" id="product_department" data-bs-toggle="modal" data-bs-target="#login_warning">
+            <div class="col-md-7 order-md-2 d-flex align-items-center">
+                <div>
+                    <h2 class="featurette-heading">创新工坊
+                        <span class="text-muted">产品部门</span>
+                    </h2>
+                    <p class="lead">
+                        负责公司的产品研发、设计、生产等方面的工作，旨在推出更具有创新性和技术含量的产品，提高公司的产品竞争力。
+                        <span class="text-muted">该部门是公司创新技术的核心，不断研发和设计出行业领先的产品。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" src="img/product_department.webp"
+                    alt="Generic placeholder image">
+            </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette sr" id="customer_service_department" data-bs-toggle="modal" data-bs-target="#login_warning">
+            <div class="col-md-7 d-flex align-items-center">
+                <div>
+                    <h2 class="featurette-heading">客户守护者
+                        <span class="text-muted">客户服务部门</span>
+                    </h2>
+                    <p class="lead">
+                        负责公司的客户服务、技术支持、售后服务等方面的工作，旨在提高公司的客户满意度和客户忠诚度。
+                        <span class="text-muted">该部门是公司客户满意度的守护者，致力于为客户提供优质的服务和售后支持，保证客户在使用公司产品和服务时感受到良好的体验。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="img/customer_service_department.webp"
+                    alt="Generic placeholder image">
+            </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    </div>
+    <!-- footer -->
+    <footer class="container sr">
+        <p class="float-end"><a href="#" class="btn btn-secondary" role="button">回到顶部</a></p>
+        <p>&copy; 2023 极限突破公司 &middot; <a data-bs-toggle="modal" data-bs-target="#login_warning" href="javascript:;">隐私</a> &middot; <a data-bs-toggle="modal" data-bs-target="#login_warning" href="javascript:;">条款</a></p>
+    </footer>
+    <!-- 模态框 my -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">关于我们</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- 模态框内容 -->
+                <div class="modal-body">
+                    <div class="container my-5">
+                        <div class="row">
+                            <div class="col">
+                                <p>by 小喾苦<br />个人网站：<a href="https://xkk1.github.io">https://xkk1.github.io</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+    <!-- 模态框 login -->
+    <div class="modal fade" id="login_warning">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">请先登录</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- 模态框内容 -->
+                <div class="modal-body">
+                    <div class="container my-5">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="text-danger text-center">操作失败！</h3>
+                                <h3 class="text-danger text-center">请先登录！</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <div class="w-100 clearfix">
+                        <a class="btn btn-success" href="sign-in_310.htm" role="button">登录</a>
+                        <button type="button" class="btn btn-danger float-end" data-bs-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

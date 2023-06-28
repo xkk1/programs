@@ -1,0 +1,38 @@
+/* 子元素垂直水平居中 */
+.BV1dX4y1h7wU-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BV1dX4y1h7wU-container>.item {
+    position: absolute;
+    background-color: transparent;
+    width: calc(var(--i)*25px);
+    aspect-ratio: 1;
+    border: 10px solid rgb(0, 200, 255);
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: BV1dX4y1h7wU-move 6s ease-in-out calc(var(--i)*0.15s) infinite;
+    box-shadow: 0px 0px 15px rgb(124, 124, 124), inset 0px 0px 15px rgb(124, 124, 124);
+    opacity: 0.3;
+}
+
+/* 定制动画关键帧 */
+@keyframes BV1dX4y1h7wU-move {
+
+    0%,
+    100% {
+        transform: rotateX(70deg)translateY(-666px);
+        filter: hue-rotate(180deg);
+    }
+
+    50% {
+        transform: rotateX(70deg)translateY(666px);
+        filter: hue-rotate(0deg);
+    }
+}
