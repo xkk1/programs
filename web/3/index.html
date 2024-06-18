@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐进式 Web 应用 (PWA) </title>
+    <base target="_blank">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <main class="main">
+        <h1>渐进式 Web 应用 (PWA) </h1>
+
+        <p><a href="./test/manifest.html" target="_self">manifest.webmanifest 示例</a></p>
+
+        <p>渐进式 Web 应用 (PWA) 是使用网络技术构建的现代优质应用。PWA 提供与 iOS/Android/桌面应用类似的功能，即使在网络条件不稳定的情况下也很可靠，并且可安装，因此用户更容易找到和使用。</p>
+
+        <p>大多数用户都熟悉安装应用以及安装式体验的优势。已安装的应用会显示在操作系统启动界面上，例如 Mac OS X 上的“应用”文件夹、Windows 上的“开始”菜单，以及 Android 和 iOS 上的主屏幕。已安装的应用也会显示在活动切换器、设备搜索引擎（如“特别关注”）和内容共享表中。</p>
+
+        <p>大多数浏览器会告知用户您的渐进式 Web 应用 (PWA) 符合特定条件时可以安装。指示器示例包括地址栏中的“安装”按钮，或溢出菜单中的“安装”菜单项。</p>
+
+        <p>此外，如果符合条件，许多浏览器就会触发 <code>beforeinstallprompt</code> 事件，以便您提供可触发应用内安装流程的自定义应用内用户体验。</p>
+
+        <hr />
+
+        <h2>
+            <a href="https://web.dev/articles/install-criteria?hl=zh-cn">怎样才算可安装？</a>
+            - 
+            <a href="https://web.dev/articles/install-criteria?hl=zh-cn#criteria">安装条件</a>
+        </h2>
+
+        <p>在 Chrome 中，您的渐进式 Web 应用必须满足以下条件，才能触发 <code>beforeinstallprompt</code> 事件并显示浏览器内安装推广信息：</p>
+
+        <ul>
+            <li>尚未安装 Web 应用</li>
+            <li>
+                满足用户互动启发法：
+                <ul>
+                    <li>用户需至少在页面上点击或点按过一次（无论何时，甚至是在之前的网页加载期间）</li>
+                    <li>无论何时，用户浏览网页的时间都必须达到至少 30 秒</li>
+                </ul>
+            </li>
+            <li style="color: red;">通过 HTTPS 提供</li>
+            <li>
+                包含一个 <a href="https://web.dev/add-manifest?hl=zh-cn">Web 应用清单</a>，其中包含以下内容： 
+                <ul>
+                    <li><code>short_name</code> 或 <code>name</code></li>
+                    <li><code>icons</code> - 必须包含一个 192 像素和一个 512 像素的图标</li>
+                    <li><code>start_url</code></li>
+                    <li><code>display</code> - 必须是 <code>fullscreen</code>、<code>standalone</code> 或 <code>minimal-ui</code> 中的一个</li>
+                    <li>“<code>prefer_related_applications</code>”不能存在，也不能是“<code>false</code>”</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>其他浏览器具有类似的安装标准，但可能略有不同。如需了解完整详情，请查看相应的网站：</p>
+        
+        <ul>
+            <li><a href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps#requirements">Edge</a></li>
+            <li><a href="https://developer.mozilla.org/docs/Web/Progressive_web_apps/Installable_PWAs">Firefox</a></li>
+            <li><a href="https://dev.opera.com/articles/installable-web-apps/">Opera</a></li>
+        </ul>
+
+    </main>
+</body>
+</html>

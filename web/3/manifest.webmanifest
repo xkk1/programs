@@ -1,0 +1,28 @@
+{
+    "name": "渐进式 Web 应用示例",
+    "short_name": "PWA 示例",
+    "description": "一个 渐进式 Web 应用(PWA)示例",
+    "lang": "zh-CN",
+    "background_color": "#ffffff",
+    "theme_color": "#eafed0",
+    "display": "standalone",
+    "start_url": "./",
+    "scope": "./",
+    "icons": [
+        {
+            "src": "./favicon.ico",
+            "sizes": "16x16 24x24 32x32 48x48"
+        },
+        {
+            "src": "./img/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./img/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+  }
+  
