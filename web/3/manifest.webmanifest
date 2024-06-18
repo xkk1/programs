@@ -3,8 +3,6 @@
     "short_name": "PWA 示例",
     "description": "一个 渐进式 Web 应用(PWA)示例",
     "lang": "zh-CN",
-    "background_color": "#ffffff",
-    "theme_color": "#eafed0",
     "display": "standalone",
     "start_url": "./",
     "scope": "./",
